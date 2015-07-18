@@ -21,7 +21,7 @@ Download
 ---
 
 Just in case you don't want to bother yourself with building
-the project, I already [have built it for you](https://github.com/Aivean/scala-to-java/releases/download/1.0/scala-to-java.jar).
+the project, I already [have built it for you](https://github.com/Aivean/scala-to-java/releases/download/v1.0.1/scala-to-java.jar).
 
 
 Source highlighting and more

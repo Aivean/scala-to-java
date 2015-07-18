@@ -27,9 +27,10 @@ process.
 
 My setup:
 ```sh
-alias scala-to-java='java -jar ~/.scala-to-java.jar | pv -W | pygmentize -f 
-256 -l java -O style=monokai'
+alias scala-to-java='java -jar ~/.scala-to-java.jar | pv -W | pygmentize -f 256 -l java -O style=monokai'
 ```
+![scala-to-java screenshot](https://cloud.githubusercontent.com/assets/2865203/8760097/b4fe881a-2cbe-11e5-9321-305e16d8ee52.png)
+
 
 Credits
 ---

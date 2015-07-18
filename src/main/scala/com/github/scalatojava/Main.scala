@@ -11,5 +11,5 @@ object Main extends App {
   println()
   private val java = ScalaToJava(source)
 
-  println(java.replaceFirst("(?s)public final class _\\$\\s+.*", ""))
+  println(if (args.contains("--slim")) java.replaceFirst("(?s)public final class _\\$\\s+.*", "") else java)
 }

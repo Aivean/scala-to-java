@@ -43,10 +43,31 @@
             <artifactId>scala-reflect</artifactId>
             <version>${scala.version}</version>
         </dependency>
+        <!--<dependency>-->
+            <!--<groupId>org.bitbucket.mstrobel</groupId>-->
+            <!--<artifactId>procyon-compilertools</artifactId>-->
+            <!--<version>0.5.29</version>-->
+        <!--</dependency>-->
         <dependency>
             <groupId>org.bitbucket.mstrobel</groupId>
             <artifactId>procyon-compilertools</artifactId>
             <version>0.5.29</version>
+            <scope>system</scope>
+            <systemPath>${project.basedir}/lib/procyon-compilertools-0.5.29.jar</systemPath>
+        </dependency>
+        <dependency>
+            <groupId>org.bitbucket.mstrobel</groupId>
+            <artifactId>procyon-core</artifactId>
+            <version>0.5.29</version>
+            <scope>system</scope>
+            <systemPath>${project.basedir}/lib/procyon-core-0.5.29.jar</systemPath>
+        </dependency>
+        <dependency>
+            <groupId>org.bitbucket.mstrobel</groupId>
+            <artifactId>procyon-decompiler</artifactId>
+            <version>0.5.29</version>
+            <scope>system</scope>
+            <systemPath>${project.basedir}/lib/procyon-decompiler-0.5.29.jar</systemPath>
         </dependency>
         <dependency>
             <groupId>org.scalatest</groupId>

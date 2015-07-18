@@ -44,7 +44,8 @@ object ScalaToJava {
 
   def compile(input: File, output: File): Array[File] = {
     val settings = new Settings
-    settings processArgumentString "-Xscript _ -usejavacp -d " + output.getPath
+    settings processArgumentString "-target:jvm-1.8 -Xscript _ -usejavacp -d " +
+      output.getPath
     val compiler = new Global(settings)
     val runner = new compiler.Run
     runner.compile(List(input.getPath))

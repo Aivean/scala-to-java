@@ -4,7 +4,7 @@
     <modelVersion>4.0.0</modelVersion>
     <groupId>com.github.scalatojava</groupId>
     <artifactId>scala-to-java</artifactId>
-    <version>1.0.1</version>
+    <version>1.0.2</version>
 
     <packaging>jar</packaging>
     <properties>
@@ -43,31 +43,10 @@
             <artifactId>scala-reflect</artifactId>
             <version>${scala.version}</version>
         </dependency>
-        <!--<dependency>-->
-            <!--<groupId>org.bitbucket.mstrobel</groupId>-->
-            <!--<artifactId>procyon-compilertools</artifactId>-->
-            <!--<version>0.5.29</version>-->
-        <!--</dependency>-->
         <dependency>
             <groupId>org.bitbucket.mstrobel</groupId>
             <artifactId>procyon-compilertools</artifactId>
             <version>0.5.29</version>
-            <scope>system</scope>
-            <systemPath>${project.basedir}/lib/procyon-compilertools-0.5.29.jar</systemPath>
-        </dependency>
-        <dependency>
-            <groupId>org.bitbucket.mstrobel</groupId>
-            <artifactId>procyon-core</artifactId>
-            <version>0.5.29</version>
-            <scope>system</scope>
-            <systemPath>${project.basedir}/lib/procyon-core-0.5.29.jar</systemPath>
-        </dependency>
-        <dependency>
-            <groupId>org.bitbucket.mstrobel</groupId>
-            <artifactId>procyon-decompiler</artifactId>
-            <version>0.5.29</version>
-            <scope>system</scope>
-            <systemPath>${project.basedir}/lib/procyon-decompiler-0.5.29.jar</systemPath>
         </dependency>
         <dependency>
             <groupId>org.scalatest</groupId>
@@ -155,9 +134,11 @@
                             <mainClass>com.github.scalatojava.Main</mainClass>
                         </manifest>
                     </archive>
-                    <descriptorRefs>
-                        <descriptorRef>jar-with-dependencies</descriptorRef>
-                    </descriptorRefs>
+                    <descriptors>
+                        <descriptor>
+                            src/assembly/jar-with-dependencies-override.xml
+                        </descriptor>
+                    </descriptors>
                     <finalName>scala-to-java</finalName>
                     <appendAssemblyId>false</appendAssemblyId>
                 </configuration>

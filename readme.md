@@ -17,6 +17,12 @@ Usage
 * Type any scala code, for example `println("hello, world")`
 and finish with `END` character (`Ctrl-D`)
 
+Download
+---
+
+Just in case you don't want to bother yourself with building
+the project, I already [have built it for you](https://github.com/Aivean/scala-to-java/releases/download/1.0/scala-to-java.jar).
+
 
 Source highlighting and more
 ---
@@ -29,7 +35,8 @@ My setup:
 ```sh
 alias scala-to-java='java -jar ~/.scala-to-java.jar | pv -W | pygmentize -f 256 -l java -O style=monokai'
 ```
-![scala-to-java screenshot](https://cloud.githubusercontent.com/assets/2865203/8760097/b4fe881a-2cbe-11e5-9321-305e16d8ee52.png)
+<img src="https://cloud.githubusercontent.com/assets/2865203/8760097/b4fe881a-2cbe-11e5-9321-305e16d8ee52.png" 
+width="400"/>
 
 
 Credits

@@ -5,11 +5,6 @@ package com.github.scalatojava
  *         2015-07-12
  */
 object Main extends App {
-  val source = Iterator.continually(scala.io.StdIn.readLine()).takeWhile(
-    _ != null).mkString("\n")
-
-  println()
-  private val java = ScalaToJava(source)
-
-  println(if (args.contains("--slim")) java.replaceFirst("(?s)public final class _\\$\\s+.*", "") else java)
+  val s2j: ScalaToJavaFromStandardInput = new ScalaToJavaFromStandardInput()
+  s2j.run(args)
 }
